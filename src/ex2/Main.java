@@ -10,31 +10,28 @@ public class Main {
         System.out.println("Write a number: ");
         int input = Integer.parseInt(scanner.nextLine());
 
-        switchEx(input);
+        String result = switchEx(input);
+        System.out.println(result);
 
         scanner.close();
     }
 
-    public static void switchEx(int num) {
+    public static String switchEx(int num) {
         switch (num) {
             case 0: {
-                System.out.println("zero");
-                break;
+                return "zero";
             }
             case 1: {
-                System.out.println("one");
-                break;
+                return "one";
             }
             case 2: {
-                System.out.println("two");
-                break;
+                return "two";
             }
             case 3: {
-                System.out.println("three");
-                break;
+                return "three";
             }
             default: {
-                System.out.println("Error");
+                return "Error";
             }
         }
     }
